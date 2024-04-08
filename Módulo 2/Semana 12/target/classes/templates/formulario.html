@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Cadastro de Produto</title>
+</head>
+<body>
+<form action="#" th:action="@{/formulario}" th:object="${produto}" method="post">
+  <label for="nome">Nome: </label>
+  <input type="text" th:field="*{nome}" id="nome" placeholder="Digite o nome do produto">
+  <label for="descricao">Descrição: </label>
+  <input type="text" th:field="*{descricao}" id="descricao" placeholder="Digite a descrição do produto">
+  <label for="data-lancamento">Data de Lançamento: </label>
+  <input type="text" th:field="*{dataLancamento}" id="data-lancamento" placeholder="Digite a data de lançamento do produto">
+  <label for="valor">Valor: </label>
+  <input type="text" th:field="*{valor}" id="valor" placeholder="Digite o valor do produto">
+  <input type="submit" value="Enviar">
+</form>
+</body>
+</html>

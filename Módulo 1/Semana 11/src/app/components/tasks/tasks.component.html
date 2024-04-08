@@ -1,0 +1,26 @@
+<form #input="ngForm" (ngSubmit)="onSubmit(input)">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Tarefa</span>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Adicione uma nova tarefa"
+      aria-label="task"
+      aria-describedby="basic-addon1"
+      name="task"
+      ngModel
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary" >
+    Salvar tarefa
+  </button>
+</form>
+
+<ul class="list-task" *ngIf="tasks.length >= 1; else templateElse">
+  <li *ngFor="let task of tasks" class="task-item">{{ task }}</li>
+</ul>
+
+<ng-template #templateElse>
+  <p>Listagem vazia</p>
+</ng-template>

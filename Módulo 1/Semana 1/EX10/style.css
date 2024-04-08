@@ -1,0 +1,43 @@
+#navbar{
+  position: fixed;
+  width:100%;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+}
+
+#navbar img{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+#navbar a{
+  float:right;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar a:hover{
+  float:right;
+  padding: 15px;
+  background-color: white;
+  color: black;
+  animation-name: cor;
+  animation-duration: 300ms;
+}
+
+@keyframes cor{
+  from {background-color: white;}
+  to {background-color: orange;}
+}
+
+footer{
+  width: 100%;
+  bottom:0%;
+  left: 0%;
+  position: absolute;
+  background-color: gray;
+  text-align: center;
+}

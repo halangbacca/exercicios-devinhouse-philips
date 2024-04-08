@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Números Primos</title>
+  </head>
+  <body>
+    <script>
+      var texto = "";
+      var qtdPrimos = 0;
+      var divisores;
+
+      for (var cont = 0; cont <= 1000; cont++) {
+        divisores = 0;
+        for (var aux = 1; aux <= cont; aux++) {
+          if (cont % aux == 0) {
+            divisores++;
+          }
+        }
+
+        if (divisores == 2) {
+          texto += cont + " ";
+          qtdPrimos++;
+        }
+      }
+
+      alert(texto);
+      alert(
+        "Existem " + qtdPrimos + " números primos no intervalo de 0 a 1000!"
+      );
+    </script>
+  </body>
+</html>

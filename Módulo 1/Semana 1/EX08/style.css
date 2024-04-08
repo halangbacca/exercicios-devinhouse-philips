@@ -1,0 +1,19 @@
+#navbar{
+  position: fixed;
+  width:100%;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+}
+
+#navbar img{
+  width: 30px;
+  height:30px;
+  top: 0px;
+  padding: 5px;
+}
+
+#navbar a{
+  float:right;
+  padding: 10px;
+}

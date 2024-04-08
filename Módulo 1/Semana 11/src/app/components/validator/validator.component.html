@@ -1,0 +1,10 @@
+<div>
+  <h3>Digite uma senha:</h3>
+  <input type="password" min="5" [(ngModel)]="password" />
+  <p style="color:green" *ngIf="password.length > 5; else templateElse">
+    A senha possui mais que 5 caracteres, está tudo certo :)
+  </p>
+  <ng-template #templateElse>
+    <p style="color: red">A senha deve conter mais que 5 caracteres</p>
+  </ng-template>
+</div>

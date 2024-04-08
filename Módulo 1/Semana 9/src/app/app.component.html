@@ -1,0 +1,71 @@
+<philips-navbar></philips-navbar>
+
+<form class="row g-3">
+
+  <div class="col-md-6">
+    <label for="inputNome" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="inputNome" placeholder="Digite o seu nome" />
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputCargaHoraria" class="form-label">Carga horária da disciplina</label>
+    <input type="text" class="form-control" id="inputCargaHoraria" placeholder="Digite a carga horária" />
+  </div>
+
+  <div class="col-6">
+    <label for="inputEscola" class="form-label">Instituição de Ensino</label>
+    <input
+      type="text"
+      class="form-control"
+      id="inputEscola"
+      placeholder="Digite o nome da escola"
+    />
+  </div>
+  
+  <div class="col-md-6">
+    <label for="inputProfessor" class="form-label">Professor</label>
+    <select id="inputProfessor" class="form-select">
+      <option selected>Selecione um professor</option>
+      <option>Otávio</option>
+      <option>Vivian</option>
+      <option>Leandro</option>
+      <option>Cláudia</option>
+    </select>
+  </div>
+
+  <label for="form-check" class="form-label">A disciplina é opcional?</label>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">Sim</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">Não</label>
+  </div>
+
+  <div class="col-6">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+      Enviar
+    </button>
+  </div>
+
+</form>
+
+<div class="modal" id="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Aviso</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Formulário enviado com sucesso.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<philips-item-card [serie] = "personagem"></philips-item-card>

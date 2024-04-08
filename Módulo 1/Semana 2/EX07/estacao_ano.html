@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estações do Ano</title>
+</head>
+<body>
+    <script>
+        var dia = prompt("Digite o dia do mês: ")
+        var mes = prompt("Digite o mês do ano: ")
+        if((dia >= 22 && mes == 12 || mes == 1 || mes == 2) || (dia <= 21 && mes == 3)){
+            alert("Estação atual: Verão")
+        }else if((dia >= 22 && mes == 3 || mes == 4 || mes == 5) || (dia <= 21 && mes == 6)){
+            alert("Estação atual: Outono")
+        }else if((dia >= 22 && mes == 6 || mes == 7 || mes == 8) || (dia <= 21 && mes == 9)){
+            alert("Estação atual: Inverno")
+        }else if((dia >= 22 && mes == 9 || mes == 10 || mes == 11) || (dia <= 21 && mes == 12)){
+            alert("Estação atual: Primavera")
+        }
+    </script>
+</body>
+</html>

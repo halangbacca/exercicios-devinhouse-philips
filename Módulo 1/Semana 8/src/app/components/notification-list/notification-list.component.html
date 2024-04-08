@@ -1,0 +1,29 @@
+<!-- <button (click)="salvarPessoa()" type="button" class="btn btn-primary">
+  Salvar
+</button>
+<button type="button" class="btn btn-secondary">Cancelar</button> -->
+
+<div *ngFor="let jogo of jogos" class="list-group">
+  <a
+    [ngClass]="
+      jogo.lido == true
+        ? 'list-group-item list-group-item-action flex-column align-items-start'
+        : 'list-group-item list-group-item-action flex-column align-items-start active'
+    "
+  >
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{ jogo.titulo }}</h5>
+      <small>{{ jogo.data }}</small>
+    </div>
+    <p class="mb-1">
+      {{ jogo.descricao }}
+    </p>
+  </a>
+  <button
+    (click)="jogo.lido = !jogo.lido"
+    type="button"
+    class="btn btn-secondary"
+  >
+    Lido
+  </button>
+</div>

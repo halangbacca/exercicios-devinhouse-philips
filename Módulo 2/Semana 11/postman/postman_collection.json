@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "69aeb74c-d450-4fce-9e84-38e25966e0ae",
+		"name": "Exercícios M2-S11",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25426492"
+	},
+	"item": [
+		{
+			"name": "Cadastra Quiz",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Halan\",\n    \"descricao\": \"Germano Bacca\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/quizzes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quizzes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastra Pergunta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Halan\",\n    \"texto\": \"Germano Bacca\",\n    \"idQuiz\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/perguntas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"perguntas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastra Resposta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"texto\": \"Germano Bacca\",\n    \"idPergunta\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/respostas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"respostas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Quiz por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/quizzes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quizzes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Pergunta por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/perguntas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"perguntas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Resposta por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/respostas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"respostas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Quizzes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/quizzes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quizzes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Perguntas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/perguntas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"perguntas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Respostas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/respostas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"respostas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Perguntas por Quiz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/perguntas/quiz?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"perguntas",
+						"quiz"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Respostas por Pergunta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/respostas/pergunta?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"respostas",
+						"pergunta"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Quiz por ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/quizzes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quizzes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Pergunta por ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/perguntas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"perguntas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Resposta por ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/respostas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"respostas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Quiz por ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Luciana\",\n    \"descricao\": \"Lamim\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/quizzes/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quizzes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Pergunta por ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"titulo\": \"Luciana\",\n    \"texto\": \"Lamim\",\n    \"idQuiz\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/perguntas/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"perguntas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Resposta por ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"texto\": \"Luciana Lamim\",\n    \"idPergunta\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/respostas/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"respostas",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

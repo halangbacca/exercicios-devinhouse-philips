@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classe Usuário</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.mjs" type="module"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Cadastro de Usuários</h1>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <form id="form" class="form">
+          <div>
+            <label for="nome">Nome:</label>
+            <input
+              required
+              type="text"
+              id="nome"
+              placeholder="Digite seu nome"
+            />
+          </div>
+
+          <div>
+            <label for="cpf">E-mail:</label>
+            <input
+              required
+              type="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+
+          <div>
+            <label for="senha">Senha:</label>
+            <input
+              required
+              type="password"
+              id="senha"
+              placeholder="Digite sua senha"
+            />
+          </div>
+
+          <div>
+            <button type="reset" class="button">Limpar</button>
+            <button type="submit" id="botao-acessar" class="button">
+              Acessar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Halan Germano Bacca</p>
+    </footer>
+  </body>
+</html>
